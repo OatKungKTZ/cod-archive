@@ -147,3 +147,12 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# COD Archive
+node_modules/
+dist/
+playwright-report/
+test-results/
+*.local
+
+.impeccable/

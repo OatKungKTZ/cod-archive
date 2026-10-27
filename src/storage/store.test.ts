@@ -1,0 +1,25 @@
+import "fake-indexeddb/auto";
+import { it, expect } from "vitest";
+import { openDB, deleteDB } from "idb";
+import { loadState, saveState } from "./store";
+import { initialState } from "../domain/model";
+it("บันทึกกลับมาได้ Reset ว่างแล้วไม่เติมค่าเริ่มต้น และไม่เขียนทับเวอร์ชันอนาคต", async () => {
+  await deleteDB("cod-archive-personal");
+  expect(await loadState()).toEqual(initialState());
+  const s = initialState();
+  s.games = {};
+  s.items = [];
+  await saveState(s);
+  expect((await loadState()).items).toEqual([]);
+  const bad = { ...s, budget: -10 };
+  await expect(saveState(bad)).rejects.toThrow();
+  expect(await loadState()).toEqual(s);
+  const d = await openDB("cod-archive-personal", 1);
+  await d.put("state", { schemaVersion: 99, data: s }, "personal");
+  await expect(loadState()).rejects.toThrow("เวอร์ชันข้อมูล");
+  expect((await d.get("state", "personal")).schemaVersion).toBe(99);
+  await d.put("state", null, "personal");
+  await expect(loadState()).rejects.toThrow();
+  expect(await d.get("state", "personal")).toBeNull();
+  d.close();
+});
