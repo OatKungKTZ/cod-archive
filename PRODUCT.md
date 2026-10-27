@@ -32,7 +32,7 @@ V1 มี Dashboard, Timeline, Game Details, Collection, Wishlist/Budget, Stats 
 
 ## Evidence on Hand
 
-Brief และแผนที่ผู้ใช้อนุมัติ ข้อมูลส่วนตัวเริ่มต้นคือ MW2019 PS4 Disc, US, ESRB, Owned ไม่ทราบราคาหรือสถานะการเล่น รายการอื่นไม่ยืนยัน รายการข้อมูลทางการที่อ่านจริงอยู่ใน docs/data-verification.md ภาพใน V1 เป็นภาพทดแทนต้นฉบับ
+Brief และแผนที่ผู้ใช้อนุมัติ ข้อมูลส่วนตัวเริ่มต้นคือ MW2019 PS4 Disc, US, ESRB, Owned ไม่ทราบราคาหรือสถานะการเล่น รายการอื่นไม่ยืนยัน รายการข้อมูลทางการที่อ่านจริงอยู่ใน docs/data-verification.md ผู้ใช้อนุมัติให้ใส่ภาพปกจริงแล้ว ภาพมาจาก PlayStation/Steam/Activision Media Center พร้อมแหล่งอ้างอิงและเครดิต ดู docs/cover-art.md; SVG ต้นฉบับใช้เป็น Fallback
 
 ## Product Principles
 

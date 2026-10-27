@@ -49,13 +49,11 @@ test("Backup ส่งออก ตรวจไฟล์ผิด และ Impo
   await page.getByRole("button", { name: "Export JSON" }).click();
   const file = await download;
   expect(file.suggestedFilename()).toMatch(/^cod-archive-backup/);
-  await page
-    .getByLabel("เลือกไฟล์ Backup JSON")
-    .setInputFiles({
-      name: "bad.json",
-      mimeType: "application/json",
-      buffer: Buffer.from("{}"),
-    });
+  await page.getByLabel("เลือกไฟล์ Backup JSON").setInputFiles({
+    name: "bad.json",
+    mimeType: "application/json",
+    buffer: Buffer.from("{}"),
+  });
   await expect(page.getByText("นำเข้าไม่ได้:", { exact: false })).toBeVisible();
   const path = await file.path();
   await page.getByLabel("เลือกไฟล์ Backup JSON").setInputFiles(path!);
@@ -90,6 +88,58 @@ test("PWA Cache และแก้ข้อมูลได้ขณะ Offline",
   await page.reload();
   await expect(page.getByLabel("บันทึกส่วนตัว", { exact: true })).toHaveValue(
     "บันทึกตอน Offline",
+  );
+  await page.goto("./#/collection");
+  const covers = page.locator(".game-card .cover img");
+  await expect(covers).toHaveCount(9);
+  await expect
+    .poll(() =>
+      covers.evaluateAll((images) =>
+        images.every((image) => {
+          const img = image as HTMLImageElement;
+          return (
+            img.complete &&
+            img.naturalWidth > 0 &&
+            /\.(jpg|webp)$/.test(img.src)
+          );
+        }),
+      ),
+    )
+    .toBeTruthy();
+});
+
+test("ภาพจริงครบ 9 เกมและใช้ภาพสำรองเมื่อไฟล์เสีย", async ({ page }) => {
+  await page.goto("./#/collection");
+  const covers = page.locator(".game-card .cover img");
+  await expect(covers).toHaveCount(9);
+  await expect
+    .poll(() =>
+      covers.evaluateAll((images) =>
+        images.every((image) => {
+          const img = image as HTMLImageElement;
+          return (
+            img.complete &&
+            img.naturalWidth > 0 &&
+            /\.(jpg|webp)$/.test(img.src)
+          );
+        }),
+      ),
+    )
+    .toBeTruthy();
+  // A broken real image must recover using the local SVG, including after navigation.
+  await page.route("**/covers/mw-2019.jpg", (route) => route.abort());
+  await page.goto("./#/games/mw-2019");
+  const cover = page.locator(".detail-header .cover img");
+  await expect(cover).toHaveAttribute("src", /mw-2019\.svg$/);
+  await expect
+    .poll(() =>
+      cover.evaluate((image) => (image as HTMLImageElement).naturalWidth),
+    )
+    .toBeGreaterThan(0);
+  await page.goto("./#/games/bo-2010");
+  await expect(page.locator(".detail-header .cover img")).toHaveAttribute(
+    "src",
+    /bo-2010\.jpg$/,
   );
 });
 

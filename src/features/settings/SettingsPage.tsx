@@ -1,5 +1,6 @@
 import { Download, RefreshCw, Trash2, Upload } from "lucide-react";
 import { useRef, useState } from "react";
+import { version as appVersion } from "../../../package.json";
 import { Badge, Field, PageHead } from "../../components/UI";
 import { games } from "../../data/games";
 import {
@@ -206,14 +207,15 @@ function SettingsPage({
           <p>
             Call of Duty Archive & Collection
             <br />
-            เวอร์ชัน 1.0.0 · Schema 1 · Catalog 2026-10-v1
+            เวอร์ชัน {appVersion} · Schema 1 · Catalog 2026-10-v1
           </p>
           <p>
             เว็บส่วนตัวสำหรับ PS5 Pro พร้อม Disc Drive ไม่ใช่ผลิตภัณฑ์ทางการของ
             Activision หรือ PlayStation ชื่อเกมเป็นเครื่องหมายการค้าของเจ้าของ
           </p>
           <p>
-            ภาพใน V1 เป็นภาพทดแทนที่สร้างเอง ไม่ใช่ภาพปกทางการ
+            ภาพปกและคีย์อาร์ตมาจาก PlayStation, Steam และ Activision Media
+            Center ลิขสิทธิ์เป็นของเจ้าของ มีแหล่งภาพกำกับในรายละเอียดแต่ละเกม
             ข้อมูลกลางที่ยังไม่ยืนยันจะติดป้าย Unverified / Unknown
           </p>
         </section>

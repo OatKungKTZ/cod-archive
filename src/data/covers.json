@@ -1,0 +1,101 @@
+{
+  "mw-2019": {
+    "file": "mw-2019.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare/",
+    "sourceImage": "https://image.api.playstation.com/cdn/UP0002/CUSA08829_00/xmKUnAOenEAKspB3FlOg80aQZfEoCYcE.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "37eb52eb67d93ab01ec1f550062f140622a938cee96a58622547f5c1bd4d9994",
+    "bytes": 96028
+  },
+  "mw-2022": {
+    "file": "mw-2022.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-ii/",
+    "sourceImage": "https://image.api.playstation.com/vulcan/ap/rnd/202205/2800/W5uSEsW7yefCNTHatS03v5q7.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "95121a3357c49656d0a85346f7b017cb291f90489f1c7aaff6d8032bb0ce93da",
+    "bytes": 136367
+  },
+  "mw-2023": {
+    "file": "mw-2023.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-modern-warfare-iii/",
+    "sourceImage": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1722/15f4ab1e0fe6a37609b164362a653c0e5bcee98a861d0f10.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "989ea8270e0d69b3b0f9b3b7f690494b4a4f7896163768feaa17992f9baecc62",
+    "bytes": 116644
+  },
+  "bo-coldwar": {
+    "file": "bo-coldwar.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-black-ops-cold-war/",
+    "sourceImage": "https://image.api.playstation.com/vulcan/img/rnd/202111/2000/vDTX1PFjQfaEuC6LxpiFrljo.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "188228f1c150e51900d1193af8b602528621b146c559148fa729d9d1a2c6ec61",
+    "bytes": 150119
+  },
+  "bo-2024": {
+    "file": "bo-2024.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-black-ops-6/",
+    "sourceImage": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2921/4b45cf4b319a65e05f6e4f87a22c7b91d2e7e8aeb247b61f.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "ceb81910ab4a59e26af19744b75f2c8dc2fe7930cb0278c0a00de2e21a3b7a3d",
+    "bytes": 100766
+  },
+  "bo-2025": {
+    "file": "bo-2025.jpg",
+    "sourcePage": "https://www.playstation.com/en-us/games/call-of-duty-black-ops-7/",
+    "sourceImage": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2119/8c163e488e9e46b842889e773a8d6807b52f9d0e00b05652.png?w=600&thumb=false",
+    "sourceLabel": "PlayStation · ภาพผลิตภัณฑ์ Digital (US)",
+    "note": "ภาพอาจแสดง Cross-Gen Bundle ไม่ได้ระบุ Edition หรือรูปแบบแผ่นที่คุณครอบครอง",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "bd2f5dea04acb8dab127d0f1e8ed82759b309b6e469aa6d3616f700fc340a3c8",
+    "bytes": 103272
+  },
+  "bo-2010": {
+    "file": "bo-2010.jpg",
+    "sourcePage": "https://store.steampowered.com/app/42700/",
+    "sourceImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/42700/library_600x900.jpg",
+    "sourceLabel": "Steam · ภาพเกมต้นฉบับเวอร์ชัน PC",
+    "note": "ใช้ระบุเกมต้นฉบับ ไม่ใช่หลักฐานว่ามีแผ่นหรือเวอร์ชัน PS4/PS5",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "75d16f0b692bcccaca9cfbd79765c8b7c069b6cf8373d74321620e72d068ffe9",
+    "bytes": 45153
+  },
+  "bo-2012": {
+    "file": "bo-2012.jpg",
+    "sourcePage": "https://store.steampowered.com/app/202970/",
+    "sourceImage": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/202970/library_600x900.jpg",
+    "sourceLabel": "Steam · ภาพเกมต้นฉบับเวอร์ชัน PC",
+    "note": "ใช้ระบุเกมต้นฉบับ ไม่ใช่หลักฐานว่ามีแผ่นหรือเวอร์ชัน PS4/PS5",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "97a5538618d9c3b223a7b7eb200191ba41185e831758f3770e45785fe0c9fe7d",
+    "bytes": 28669
+  },
+  "mw4-pending": {
+    "file": "mw4-pending.webp",
+    "sourcePage": "https://press.activision.com/downloads",
+    "sourceImage": "https://www.activision.com/content/dam/atvi/activision/atvi-touchui/press-2025/home/franchise-key-art/call-of-duty/modern-warfare-4.webp",
+    "sourceLabel": "Activision Media Center · คีย์อาร์ต Modern Warfare 4",
+    "note": "คีย์อาร์ตทางการสำหรับระบุเกม ไม่ใช่การยืนยัน Region หรือ Edition ของแผ่น",
+    "copyright": "© Activision Publishing, Inc. เครื่องหมายการค้าเป็นของเจ้าของ",
+    "checkedAt": "2026-10-27",
+    "sha256": "14ac86841cc5cd92813a5dc37e246a004fc982295c9cc4faeca46b9365c2c050",
+    "bytes": 99140
+  }
+}

@@ -34,7 +34,7 @@ npm run preview
 - Dark / Light / System, Responsive, Safe Area, Reduced Motion, Keyboard Focus
 - Manifest, ไอคอนต้นฉบับ, Offline Cache และปุ่มอัปเดตแอป
 
-ภาพใน V1 เป็น **ภาพทดแทนที่สร้างเอง ไม่ใช่ภาพปกทางการ** เพื่อไม่อนุมานสิทธิ์นำภาพมาเผยแพร่ซ้ำ ฟอนต์ Noto Sans Thai และ Barlow Condensed เก็บในโครงการพร้อม OFL
+ภาพปกและคีย์อาร์ตจริงครบ 9 เกมมาจาก PlayStation, Steam และ Activision Media Center เก็บในแอปเพื่อใช้ Offline มีแหล่งอ้างอิงและเครดิตรายเกมใน `src/data/covers.json` ส่วน SVG เดิมใช้สำรองเมื่อภาพโหลดไม่ได้ ดู [แหล่งภาพและลิขสิทธิ์](docs/cover-art.md) ฟอนต์ Noto Sans Thai และ Barlow Condensed เก็บในโครงการพร้อม OFL
 
 ## ข้อมูลเริ่มต้น
 

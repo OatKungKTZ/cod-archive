@@ -8,6 +8,7 @@ import {
 } from "react";
 import { Link } from "react-router-dom";
 import { type Game, seriesLabel } from "../data/games";
+import coverAssets from "../data/covers.json";
 import {
   blankGame,
   ownershipLabels,
@@ -21,24 +22,33 @@ export function Cover({
   game: Game;
   large?: boolean;
 }) {
-  const [broken, setBroken] = useState(false);
+  const [failure, setFailure] = useState({ gameId: "", stage: 0 });
+  const stage = failure.gameId === game.id ? failure.stage : 0;
+  const asset = coverAssets[game.id as keyof typeof coverAssets];
+  const useOfficial = !!asset && stage === 0;
+  const src = `${import.meta.env.BASE_URL}covers/${useOfficial ? asset.file : `${game.id}.svg`}`;
   return (
     <div
       className={`cover ${large ? "cover-large" : ""}`}
       style={{ "--cover-accent": game.color } as React.CSSProperties}
     >
-      {!broken ? (
+      {stage < 2 ? (
         <img
-          src={`${import.meta.env.BASE_URL}covers/${game.id}.svg`}
-          alt={`ภาพทดแทนต้นฉบับสำหรับ ${game.title}`}
-          onError={() => setBroken(true)}
+          src={src}
+          alt={
+            useOfficial ? `ภาพปก ${game.title}` : `ภาพทดแทนสำหรับ ${game.title}`
+          }
+          decoding="async"
+          onError={() => setFailure({ gameId: game.id, stage: stage + 1 })}
         />
       ) : (
         <span>{game.short}</span>
       )}
-      <span className="cover-corner">
-        ARCHIVE / {String(game.order).padStart(2, "0")}
-      </span>
+      {!useOfficial && (
+        <span className="cover-corner">
+          ARCHIVE / {String(game.order).padStart(2, "0")}
+        </span>
+      )}
     </div>
   );
 }

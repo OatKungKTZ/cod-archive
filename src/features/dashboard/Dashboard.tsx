@@ -60,16 +60,7 @@ function Dashboard({ state }: { state: UserState }) {
           </span>
         </div>
         <div className="hero-art" aria-hidden="true">
-          <div className="art-frame">
-            <span>CALL OF DUTY</span>
-            <strong>
-              MODERN
-              <br />
-              WARFARE
-            </strong>
-            <div className="art-line" />
-            <small>THE STORY IS ONLY THE BEGINNING</small>
-          </div>
+          <Cover game={games[0]} />
           <div className="art-label">
             <span className="live-dot" /> ARCHIVE NO. 001 <span>2019</span>
           </div>

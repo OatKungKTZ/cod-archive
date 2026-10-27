@@ -18,4 +18,13 @@
 - รายละเอียดเกมที่ติดป้าย Unknown/Unverified รวม FPS, ภาษา Region/Edition, ราคาไทย และแพ็กติดตั้ง
 - GitHub Pages ยังต้องเปิดจาก Settings โดยเจ้าของ เนื่องจาก API ตอบ 403 Resource not accessible by integration; Workflow ข้าม Deploy หากยังไม่ได้เปิด Pages แบบ GitHub Actions
 
-ดูรายการทดสอบอุปกรณ์จริงใน `docs/testing.md` และแหล่งข้อมูลใน `docs/data-verification.md` ภาพปกเป็น Original Placeholder ตามข้อจำกัดด้านสิทธิ์การใช้ภาพ
+ดูรายการทดสอบอุปกรณ์จริงใน `docs/testing.md` และแหล่งข้อมูลใน `docs/data-verification.md` ผลภาพในรายงานเดิมเป็น Original Placeholder ปัจจุบันอัปเดตภาพปกจริงแล้ว ดู docs/cover-art.md สำหรับแหล่งอ้างอิง
+
+## อัปเดตภาพปก v1.0.1
+
+- ภาพจริงครบ 9 เกม: JPEG 8 ไฟล์และ WebP 1 ไฟล์ รวม 876,158 bytes
+- ตรวจภาพเทียบชื่อเกมและแหล่งต้นทางด้วยตาก่อนนำเข้า รวมภาพ Modern Warfare 4 จาก Activision Media Center
+- Production Build และ Unit Tests 16 รายการผ่าน
+- E2E 12 รายการผ่านทั้ง Desktop และ Mobile รวมภาพจริงทั้ง 9 เกมโหลดได้ขณะ Offline, การใช้ SVG สำรองเมื่อภาพจริงเสีย และสลับไปเกมอื่นหลังเกิดข้อผิดพลาด
+- ตรวจภาพ Collection ที่ 390px และ 1440px: ภาพครบและแสดงแบบ contain ไม่ตัดชื่อ/Edition ไม่มี Horizontal Overflow
+- Version 1.0.1 ใช้ Schema 1 เดิม ไม่ย้ายหรือล้างข้อมูลส่วนตัว

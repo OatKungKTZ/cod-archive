@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Accordion from "../../components/Accordion";
 import { Badge, Cover, Empty, Field } from "../../components/UI";
 import { games, seriesLabel } from "../../data/games";
+import coverAssets from "../../data/covers.json";
 import {
   blankGame,
   ownershipLabels,
@@ -22,6 +23,7 @@ function Details({ state, update }: { state: UserState; update: Update }) {
       </Empty>
     );
   const user = state.games[g.id] ?? blankGame();
+  const cover = coverAssets[g.id as keyof typeof coverAssets];
   const patch = (p: Partial<UserGame>) =>
     update((s) => ({
       ...s,
@@ -159,6 +161,23 @@ function Details({ state, update }: { state: UserState; update: Update }) {
             </div>
           </Accordion>
           <Accordion title="ข้อมูลการซื้อและแหล่งอ้างอิง">
+            {cover && (
+              <section className="cover-credit">
+                <h3>ภาพปกและคีย์อาร์ต</h3>
+                <a
+                  className="text-link"
+                  href={cover.sourcePage}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {cover.sourceLabel} <ExternalLink size={14} />
+                </a>
+                <p>{cover.note}</p>
+                <p className="caption">
+                  {cover.copyright} · ตรวจแหล่งภาพ {cover.checkedAt}
+                </p>
+              </section>
+            )}
             <div className="facts">
               {[
                 "แผ่นที่แนะนำ / Standard / Cross-Gen",

@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: "prompt",
-      includeAssets: ["icons/*.png", "covers/*.svg"],
+      includeAssets: ["icons/*.png", "covers/*.{svg,jpg,webp}"],
       manifest: {
         id: "/cod-archive/",
         name: "COD Archive",
@@ -34,7 +34,7 @@ export default defineConfig({
       },
       workbox: {
         clientsClaim: true,
-        globPatterns: ["**/*.{js,css,html,png,svg,woff2,ttf}"],
+        globPatterns: ["**/*.{js,css,html,png,jpg,jpeg,webp,svg,woff2,ttf}"],
         cleanupOutdatedCaches: true,
       },
     }),
